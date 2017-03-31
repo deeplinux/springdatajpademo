@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>springdatajpademo</groupId>
+    <artifactId>springdatajpademo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- base setting -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.locales>zh_CN</project.build.locales>
+        <project.build.jdk>1.7</project.build.jdk>
+        <java.version>1.7</java.version>
+        <!-- lib versions -->
+        <org.springframework.version>4.1.9.RELEASE</org.springframework.version>
+        <org.springframework.data.version>1.9.2.RELEASE</org.springframework.data.version>
+        <!-- <org.hibernate.version>4.3.7.Final</org.hibernate.version> -->
+        <org.hibernate.version>5.1.1.Final</org.hibernate.version>
+        <mysql.connector.version>5.1.32</mysql.connector.version>
+        <hessian.version>4.0.7</hessian.version>
+        <fastjson.version>1.2.7</fastjson.version>
+        <org.eclipse.jetty.version>9.1.0.v20131115</org.eclipse.jetty.version>
+        <org.apache.cxf.version>2.7.7</org.apache.cxf.version>
+        <project.name>data-manager-server</project.name>
+        <main.class>com.goldmsg.res.Bootstrap</main.class>
+    </properties>
+
+    <dependencies>
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <!-- spring data jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${org.springframework.data.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${org.hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${org.hibernate.version}</version>
+        </dependency>
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+        </dependency>
+        <!-- druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.15</version>
+        </dependency>
+    </dependencies>
+    
+</project>
